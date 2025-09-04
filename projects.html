@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poller+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <title>My Projects</title>
+</head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: red;
+    }
+    header {
+    background:red;
+    padding: 5px;
+    top: 0;
+    z-index: 10;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+   padding: 10px;
+    
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    color: white;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    gap: 1.5rem;
+  
+  }
+  
+  .nav-links a {
+    color: white;
+    transition: color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .nav-links a:hover {
+    color: white;
+  }
+
+    .projects {
+      padding: 4rem 2rem;
+    }
+
+    .projects h2 {
+      text-align: center;
+      margin-bottom: 3rem;
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: white ;
+    }
+
+    .project-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      color: red;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: red;
+    }
+
+    .project-card img {
+      height: 200px;
+      object-fit: cover;
+     
+    }
+  </style>
+
+<body>
+     <!-- Header -->
+  <header>
+    <nav>
+        <a class="navbar-brand" href="#">
+          <img src="images/QY_ Logo.png" alt="QY_logo" width="50" height="34">
+        </a>
+      <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="?">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+</header>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="row g-4">
+        
+        <!-- Project 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card">
+            <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Website Project">
+            <div class="card-body text-center">
+              <h5 class="card-title">Portfolio Website</h5>
+              <p class="card-text">A personal portfolio website showcasing my skills and projects. Built with HTML, CSS, and JavaScript.</p>
+              <a href="#" class="btn btn-danger"><i class="fas fa-link"></i> View Project</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card">
+            <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="App Project">
+            <div class="card-body text-center">
+              <h5 class="card-title">Mobile App</h5>
+              <p class="card-text">A cross-platform app designed to help users track their daily habits. Built with React Native.</p>
+              <a href="#" class="btn btn-danger"><i class="fas fa-link"></i> View Project</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card project-card">
+            <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="E-commerce Project">
+            <div class="card-body text-center">
+              <h5 class="card-title">E-commerce Website</h5>
+              <p class="card-text">An online store with shopping cart, checkout system, and product filtering. Built with React and Firebase.</p>
+              <a href="#" class="btn btn-danger"><i class="fas fa-link"></i> View Project</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
